@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="approval_block_form_view" model="ir.ui.view">
+        <field name="name">approval.block.form.view</field>
+        <field name="model">approval.block</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="min_amount"/>
+                        <field name="max_amount"/>
+                        <field name="approver_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="approval_block_list_view" model="ir.ui.view">
+        <field name="name">approval.block.list.view</field>
+        <field name="model">approval.block</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="min_amount"/>
+                <field name="max_amount"/>
+                <field name="approver_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_approval_block" model="ir.actions.act_window">
+        <field name="name">Approval Block</field>
+        <field name="res_model">approval.block</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

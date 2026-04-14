@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="level_one" model="approval.block">
+            <field name="name">Approval Block 5000</field>
+            <field name="min_amount">0</field>
+            <field name="max_amount">5000</field>
+            <field name="approver_id" ref="base.user_admin"/>
+        </record>
+
+        <record id="level_two" model="approval.block">
+            <field name="name">Approval Block 10000</field>
+            <field name="min_amount">5000</field>
+            <field name="max_amount">10000</field>
+            <field name="approver_id" ref="base.user_admin"/>
+        </record>
+    </data>
+</odoo>

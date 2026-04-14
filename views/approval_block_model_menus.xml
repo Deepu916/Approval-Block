@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem id="approval_block_root"
+              name="Approval Block"
+              action="action_approval_block"/>
+</odoo>
